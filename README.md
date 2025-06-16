@@ -1,54 +1,105 @@
-# React + TypeScript + Vite
+# Resourcely
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An AI-Powered Full Stack app where managers can manage assignments across projects. He/she can track who is working on which assignment, their capacity, add projects, and when engineer will be available for new projects.
+Built with React + Typescript, tailwind css, shadcn, MongoDb database, Express, Node, Context API, React Hook Form with Zod
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Demo Link
 
-## Expanding the ESLint configuration
+[Live Demo](https://resourcely-frontend-green.vercel.app/)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Login
+
+**For Managers**
+
+| Email                                                         | Password    |
+| ------------------------------------------------------------- | ----------- |
+| [emma.davis@resourcely.com](mailto:emma.davis@resourcely.com) | password123 |
+| [alex.brown@resourcely.com](mailto:alex.brown@resourcely.com) | password123 |
+
+**For Engineers**
+
+| Email                                                               | Password    |
+| ------------------------------------------------------------------- | ----------- |
+| [john.doe@resourcely.com](mailto:john.doe@resourcely.com)           | password123 |
+| [jane.smith@resourcely.com](mailto:jane.smith@resourcely.com)       | password123 |
+| [mike.wilson@resourcely.com](mailto:mike.wilson@resourcely.com)     | password123 |
+| [sarah.johnson@resourcely.com](mailto:sarah.johnson@resourcely.com) | password123 |
+
+---
+
+## Quick Start
+
+```
+git clone https://github.com/priyanka-s12/resourcely_frontend.git
+cd resourcely_frontend
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Technologies
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- React + Typescript
+- Tailwind CSS with Shadcn
+- Express.js
+- MongoDb
+- Node.js
+- React Hook Form with Zod
+- Context API
+- JWT
+- React Router
+- chart.js for visualisation
+
+---
+
+## Features
+
+- JWT based authentication
+- Login with two roles - Manager & Engineer
+- Manager and Engineer Dashboard
+- Reports
+- Responsive Design
+- Restful API
+
+---
+
+## AI tools
+
+- ChatGPT for solving errors
+- v0 helped to design pages and code generation
+- Cursor IDE used it generates so much boilerplate code
+  - I struggled when I used first time as It installed older version of tailwind css and I was unable to figure out errors but with time I understood and I started referring docs to solve that error.
+- Yes AI helped to speed up the process but you need to read each line of code to figure out what to keep and what code not to keep as per project demands
+
+---
+
+## API Endpoints
+
+For Authentication: <br/>
+POST /api/auth/login <br/>
+GET /api/auth/profile <br/>
+
+For Engineers: <br/>
+GET /api/engineers <br/>
+GET /api/engineers/:id/capacity <br/>
+
+For Projects: <br/>
+GET /api/projects <br/>
+POST /api/projects <br/>
+GET /api/projects/:id <br/>
+
+For Assignments: <br/>
+GET /api/assignments <br/>
+POST /api/assignments <br/>
+PUT /api/assignments/:id <br/>
+DELETE /api/assignments/:id <br/>
+
+---
+
+## Contact
+
+For bugs or feature request, please reach out to priyanka.sarode057@gmail.com
