@@ -1,6 +1,6 @@
 # Resourcely
 
-An AI-Powered Full Stack app where managers can manage assignments across projects. He/she can track who is working on which assignment, their capacity, add projects, and when engineer will be available for new projects.
+An AI-Powered Full Stack app where managers can manage assignments across projects. He/she can track who is working on which assignment, their capacity, add projects, and when engineer will be available for new projects.<br/>
 Built with React + Typescript, tailwind css, shadcn, MongoDb database, Express, Node, Context API, React Hook Form with Zod
 
 ---
@@ -56,6 +56,12 @@ npm run dev
 
 ---
 
+## Demo Video
+
+Watch a walkthrough (7 minutes) of all major features of this app: [Youtube Video](https://youtu.be/-zj5E84_YY0)
+
+---
+
 ## Features
 
 - JWT based authentication
@@ -97,6 +103,13 @@ GET /api/assignments <br/>
 POST /api/assignments <br/>
 PUT /api/assignments/:id <br/>
 DELETE /api/assignments/:id <br/>
+
+---
+
+## Github Repos
+
+[Frontend](https://github.com/priyanka-s12/resourcely_frontend)<br/>
+[Backend](https://github.com/priyanka-s12/resourcely_backend)
 
 ---
 
